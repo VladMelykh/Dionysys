@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Реєстрація</title>
+</head>
+<style>
+    div {
+        text-align: center;
+        margin-top: 15%;
+        font-size: 30px;
+        color: white;
+}
+    body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(to right, green, blue);
+    }
+    button{
+      border: none;
+      cursor: pointer;
+      background-color: rgb(255, 255, 255);
+      display: inline-block;
+      font-size: 35px;
+      font-family: 'Arial';
+      border-radius: 10px;
+      color: rgb(0,0,0)
+
+    }
+
+</style>
+<body>
+    <div>
+        <h2>Додати Request</h2>
+        <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit">Додати!</button>
+        </form>
+    </div>
+
+</body>
+</html>

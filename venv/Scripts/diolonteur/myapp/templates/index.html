@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+
+<html lang="ua">
+<link rel="stylesheet" href="./static/myapp/style.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main page</title>
+</head>
+<body>
+    <div class="make_me">
+        <button id="info"></button>
+        <a href="{% url 'myapp:register'  %}"><button id="button1" >Зареєструватись</button></a>
+        <button id="button2">Увійти</button>
+    </div>
+    <div class="help_class">
+        <a href="{% url 'myapp:volonteur'  %}"><button id="button3">Допомагаю</button></a>
+        <a href="{% url 'myapp:victims'  %}"><button id="button4">Потрібна допомога</button></a>
+    </div>
+</body>
+</html>
